@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Application</display-name>
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.dsce.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RequestKeysServlet</servlet-name>
+		<servlet-class>com.dsce.servlet.RequestKeysServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RequestKeysServlet</servlet-name>
+		<url-pattern>/requestKey</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>WritePatient</servlet-name>
+		<servlet-class>com.dsce.servlet.WritePatientData</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WritePatient</servlet-name>
+		<url-pattern>/writePatient</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ReadPatient</servlet-name>
+		<servlet-class>com.dsce.servlet.ReadPatientData</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReadPatient</servlet-name>
+		<url-pattern>/readPatient</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>UpdatePatient</servlet-name>
+		<servlet-class>com.dsce.servlet.UpdatePatientData</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdatePatient</servlet-name>
+		<url-pattern>/updatePatient</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Adminlogin</servlet-name>
+		<servlet-class>com.dsce.servlet.AdminloginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Adminlogin</servlet-name>
+		<url-pattern>/adminlogin</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AdminHome</servlet-name>
+		<servlet-class>com.dsce.servlet.AdminHomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminHome</servlet-name>
+		<url-pattern>/adminHome</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>Approve</servlet-name>
+		<servlet-class>com.dsce.servlet.ApproveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Approve</servlet-name>
+		<url-pattern>/approve</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>AssignRoles</servlet-name>
+		<servlet-class>com.dsce.servlet.AssignRoleServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AssignRoles</servlet-name>
+		<url-pattern>/assignRoles</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.dsce.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PatientList</servlet-name>
+		<servlet-class>com.dsce.servlet.PatientListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PatientList</servlet-name>
+		<url-pattern>/patientList</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>InitiatePatientWrite</servlet-name>
+		<servlet-class>com.dsce.servlet.InitiatePatientWrite</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InitiatePatientWrite</servlet-name>
+		<url-pattern>/initiatePatientWrite</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RequestToken</servlet-name>
+		<servlet-class>com.dsce.servlet.RequestTokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RequestToken</servlet-name>
+		<url-pattern>/requestToken</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditPatient</servlet-name>
+		<servlet-class>com.dsce.servlet.EditPatientServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditPatient</servlet-name>
+		<url-pattern>/editPatient</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.dsce.servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>Accesspolicy</servlet-name>
+		<servlet-class>com.dsce.servlet.AccessPolicyServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Accesspolicy</servlet-name>
+		<url-pattern>/getPolicy</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AllUsers</servlet-name>
+		<servlet-class>com.dsce.servlet.AllUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AllUsers</servlet-name>
+		<url-pattern>/allUsers</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditUser</servlet-name>
+		<servlet-class>com.dsce.servlet.EditUserrServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditUser</servlet-name>
+		<url-pattern>/editUser</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Revoke</servlet-name>
+		<servlet-class>com.dsce.servlet.RevokeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Revoke</servlet-name>
+		<url-pattern>/revoke</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>UpdateUser</servlet-name>
+		<servlet-class>com.dsce.servlet.UpdateUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateUser</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>Log</servlet-name>
+		<servlet-class>jsguard.LogServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Log</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

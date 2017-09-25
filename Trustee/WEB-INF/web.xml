@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Trustee</display-name>
+
+	<servlet>
+		<servlet-name>A</servlet-name>
+		<servlet-class>com.dsce.servlet.RequestTokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>A</servlet-name>
+		<url-pattern>/requestNew</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>B</servlet-name>
+		<servlet-class>com.dsce.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>B</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>C</servlet-name>
+		<servlet-class>com.dsce.servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>C</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>E</servlet-name>
+		<servlet-class>com.dsce.servlet.GrantTokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>E</servlet-name>
+		<url-pattern>/grant</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>D</servlet-name>
+		<servlet-class>com.dsce.servlet.TokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>D</servlet-name>
+		<url-pattern>/tokens</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>F</servlet-name>
+		<servlet-class>com.dsce.servlet.VerifyTokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>F</servlet-name>
+		<url-pattern>/verify</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>G</servlet-name>
+		<servlet-class>com.dsce.servlet.MarkTokenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>G</servlet-name>
+		<url-pattern>/mark</url-pattern>
+	</servlet-mapping>
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
