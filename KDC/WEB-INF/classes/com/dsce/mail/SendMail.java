@@ -1,7 +1,7 @@
+
+
 package com.dsce.mail;
-
 import java.util.Properties;
-
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -32,7 +32,7 @@ public class SendMail {
 
 		try {
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("testashok999@gmail.com",
+			message.setFrom(new InternetAddress("nagachandra.93@gmail.com",
 					"DSCE | KDC"));
 			InternetAddress rcv = new InternetAddress(to);
 			message.addRecipient(Message.RecipientType.TO, rcv);
